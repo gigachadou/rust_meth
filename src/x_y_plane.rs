@@ -97,6 +97,13 @@ impl Circle{
     pub fn move_center(&mut self, point: &Point) {
         self.center = *point;
     }
+
+    pub fn calc<F, T>(&self, f: F) -> T 
+    where
+        F: Fn(&Point, &u32) -> T 
+    {
+        f(&self.center, &self.radius)
+    }
 }
 
 impl Graph for Circle {
