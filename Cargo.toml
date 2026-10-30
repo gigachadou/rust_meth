@@ -1,5 +1,5 @@
 [package]
-name = "guess_game"
+name = "plane_grapher"
 version = "0.1.0"
 edition = "2024"
 description = "A Binary Crate with useful Structures to use in Maths"
